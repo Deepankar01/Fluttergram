@@ -6,6 +6,7 @@ class SocialFeeds extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: ColorPallete.white,
       appBar: AppBar(
         backgroundColor: ColorPallete.white,
         textTheme:
