@@ -17,6 +17,7 @@ class Home extends StatelessWidget {
       ),
       appBar: AppBar(
         backgroundColor: ColorPallete.white,
+        primary: true,
         actions: <Widget>[
           Container(
             width: 50,
