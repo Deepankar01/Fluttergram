@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttergram/Pallete.dart';
 import 'package:fluttergram/locale/en.dart';
 
 class SocialFeeds extends StatelessWidget {
@@ -6,6 +7,9 @@ class SocialFeeds extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: ColorPallete.white,
+        textTheme:
+            TextTheme(title: TextStyle(color: ColorPallete.blackWithAccent)),
         title: Text(getMessages()['appName']),
       ),
     );
