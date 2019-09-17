@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
 class ColorPallete {
-  static Color white = Colors.white;
-  static Color blackWithAccent = Colors.black87;
+  static const Color white = Colors.white;
+  static const Color blackWithAccent = Colors.black87;
 }
