@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttergram/Pallete.dart';
-
 import 'package:fluttergram/SocialFeeds/SocialFeeds.dart';
-
 import 'locale/en.dart';
 
 class Home extends StatelessWidget {
