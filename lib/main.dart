@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttergram/Authentication/Login.dart';
 import 'package:fluttergram/Authentication/Signup.dart';
-import 'package:fluttergram/Home.dart';
+import 'package:fluttergram/Home/Home.dart';
 import 'package:fluttergram/Wrappers/Wrappers.dart';
 
 void main() => runApp(MyApp());
