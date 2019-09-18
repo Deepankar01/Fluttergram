@@ -18,9 +18,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => wrapWithSafeArea(Login()),
         '/signup': (context) => wrapWithSafeArea(Signup()),
       },
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'TitilliumWeb'),
     );
   }
 }

@@ -8,12 +8,24 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorPallete.white,
-      bottomSheet: Container(
-        color: Colors.red,
-        height: 50,
-        child: Row(
-          children: <Widget>[],
+      bottomSheet: BottomSheet(
+        backgroundColor: ColorPallete.white,
+        elevation: 10,
+        builder: (BuildContext context) => Container(
+          height: 50,
+          padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Icon(Icons.home),
+              Icon(Icons.search),
+              Icon(Icons.add),
+              Icon(Icons.thumb_up),
+              Icon(Icons.supervised_user_circle)
+            ],
+          ),
         ),
+        onClosing: () {},
       ),
       appBar: AppBar(
         backgroundColor: ColorPallete.white,
@@ -34,7 +46,13 @@ class Home extends StatelessWidget {
         centerTitle: false,
         textTheme:
             TextTheme(title: TextStyle(color: ColorPallete.blackWithAccent)),
-        title: Text(getMessages()['appName']),
+        title: Text(
+          getMessages()['appName'],
+          style: TextStyle(
+              fontFamily: 'LobsterTwo',
+              fontSize: 20,
+              fontWeight: FontWeight.w700),
+        ),
       ),
       body: SocialFeeds(),
     );
