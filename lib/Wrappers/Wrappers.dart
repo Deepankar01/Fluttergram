@@ -8,6 +8,8 @@ wrapWithSafeArea(Widget toWrap, {Color bgColor = ColorPallete.white}) {
       left: false,
       right: false,
       child: toWrap,
+      bottom: false,
+      top: false,
     ),
   );
 }

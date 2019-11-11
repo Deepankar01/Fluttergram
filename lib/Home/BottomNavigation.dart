@@ -4,8 +4,8 @@ import 'package:fluttergram/Pallete.dart';
 class BottomNavigation extends StatelessWidget {
   Widget _navigationBar() {
     return Container(
-      height: 50,
-      padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+      height: 60,
+      padding: EdgeInsets.fromLTRB(20, 10, 20, 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
@@ -39,7 +39,7 @@ class BottomNavigation extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomSheet(
       backgroundColor: ColorPallete.white,
-      elevation: 10,
+      elevation: 20,
       builder: (BuildContext context) => _navigationBar(),
       onClosing: () {},
     );

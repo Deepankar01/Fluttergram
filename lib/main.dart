@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:fluttergram/Authentication/Login.dart';
 import 'package:fluttergram/Authentication/Signup.dart';
 import 'package:fluttergram/Home/Home.dart';
-import 'package:fluttergram/Wrappers/Wrappers.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,9 +13,9 @@ class MyApp extends StatelessWidget {
       title: 'FlutterGram',
       initialRoute: '/',
       routes: {
-        '/': (context) => wrapWithSafeArea(Home()),
-        '/login': (context) => wrapWithSafeArea(Login()),
-        '/signup': (context) => wrapWithSafeArea(Signup()),
+        '/': (context) => Home(),
+        '/login': (context) => Login(),
+        '/signup': (context) => Signup(),
       },
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'TitilliumWeb'),
     );

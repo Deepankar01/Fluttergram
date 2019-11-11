@@ -5,7 +5,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:fluttergram/locale/en.dart';
 
 AppBar appHeader() => AppBar(
-      backgroundColor: ColorPallete.white,
+      backgroundColor: Colors.white,
+      elevation: 3,
       primary: true,
       actions: <Widget>[
         Container(
