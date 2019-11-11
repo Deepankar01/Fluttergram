@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:fluttergram/Pallete.dart';
 
 class BottomNavigation extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
+  Widget _navigationBar() {
     return Container(
       height: 50,
       padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
@@ -32,6 +32,16 @@ class BottomNavigation extends StatelessWidget {
           )
         ],
       ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return BottomSheet(
+      backgroundColor: ColorPallete.white,
+      elevation: 10,
+      builder: (BuildContext context) => _navigationBar(),
+      onClosing: () {},
     );
   }
 }
