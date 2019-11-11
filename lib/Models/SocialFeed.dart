@@ -27,8 +27,10 @@ class SocialFeedModel {
   final BigInt commentsCount;
   final List<CommentModel> comments;
   final DateTime postedTime;
+  final Uri postImage;
   SocialFeedModel(
       {this.user,
+      this.postImage,
       this.isBookMarked,
       this.isLiked,
       this.comments,

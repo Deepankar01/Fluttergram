@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-class LikePost extends StatelessWidget {
+class BookMarkPost extends StatelessWidget {
+  final bool isBookmarked;
+  BookMarkPost({this.isBookmarked});
   @override
   Widget build(BuildContext context) {
     return Container();
